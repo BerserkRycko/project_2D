@@ -98,13 +98,13 @@ k.scene("main", async () => {
         const lowerBound = 50;
         const upperBound = 125;
 
-        if(
+        if (
             mouseAngle > lowerBound &&
             mouseAngle < upperBound &&
             player.curAnim() !== "walk-up"
-        ){
+        ) {
             player.play("walk-up");
-            player.direction("up");
+            player.direction = "up";
             return;
         }
     })
